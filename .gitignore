@@ -1,0 +1,13 @@
+supabase/.temp/
+node_modules/
+.DS_Store
+
+# Internal working documents. GitHub Pages publishes every committed file
+# at thebookofoneness.com, and these name the author, his home folder and
+# other ventures. They must never be committed. Added 2 October 2026.
+*.md
+*.docx
+site-archive/
+netlify.toml
+vercel.json
+.netlify/
