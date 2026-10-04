@@ -14,7 +14,7 @@
   --magenta: #FF0040;
   --pink: #FF5785;         /* CTA buttons */
   --green: #7AFF3B;
-  --night: #00C2C7;
+  --night: #4FC3D2;
   --day: #F2C94C;
   --ebook: #FF5785;
   --audio: #41D07A;
@@ -512,8 +512,8 @@ h1, h2, h3, h4 { font-weight: 700; }
 
 .book__edition--day { border-color: rgba(242, 201, 76, 0.15); }
 .book__edition--day:hover { border-color: rgba(242, 201, 76, 0.3); }
-.book__edition--night { border-color: rgba(0, 194, 199, 0.15); background: rgba(0, 194, 199, 0.02); }
-.book__edition--night:hover { border-color: rgba(0, 194, 199, 0.3); }
+.book__edition--night { border-color: rgba(79, 195, 210, 0.15); background: rgba(79, 195, 210, 0.02); }
+.book__edition--night:hover { border-color: rgba(79, 195, 210, 0.3); }
 .book__edition--ebook { border-color: rgba(255, 87, 133, 0.15); }
 .book__edition--ebook:hover { border-color: rgba(255, 87, 133, 0.3); }
 .book__edition--audio { border-color: rgba(65, 208, 122, 0.15); }
@@ -678,7 +678,7 @@ h1, h2, h3, h4 { font-weight: 700; }
 .modal--day .modal__title { color: var(--day); }
 .modal--day .modal { border-color: rgba(242, 201, 76, 0.25); }
 .modal--night .modal__title { color: var(--night); }
-.modal--night .modal { border-color: rgba(0, 194, 199, 0.25); }
+.modal--night .modal { border-color: rgba(79, 195, 210, 0.25); }
 .modal--ebook .modal__title { color: var(--ebook); }
 .modal--ebook .modal { border-color: rgba(255, 87, 133, 0.25); }
 .modal--audio .modal__title { color: var(--audio); }

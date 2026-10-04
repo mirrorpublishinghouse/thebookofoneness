@@ -5,11 +5,11 @@
    ============================================================= */
 :root{
   --void:#0A0A0A; --void-2:#050505; --void-3:#111111; --void-4:#161616;
-  --fg:#F0F0F0; --fg-2:#B8B8B8; --fg-muted:#666666; --fg-line:#2A2A2A;
-  --yellow:#FFE000; --yellow-d:#E5C800; --yellow-hover:#FFEC4D; --yellow-tint:rgba(255,224,0,0.10);
-  --pink:#FF2D6F; --pink-hover:#FF4F88; --pink-tint:rgba(255,45,111,0.12);
+  --fg:#F0F0F0; --fg-2:#B8B8B8; --fg-muted:#B4B4B4; --fg-line:#2A2A2A;
+  --yellow:#4FC3D2; --yellow-d:#E5C800; --yellow-hover:#FFEC4D; --yellow-tint:rgba(79,195,210,0.10);
+  --pink:#D62F3B; --pink-hover:#FF4F88; --pink-tint:rgba(214,47,59,0.12);
   --gold:#C8A96E;
-  --signal-cyan:#00C2C7; --signal-green:#4ADE80; --signal-red:#E5232F;
+  --signal-cyan:#4FC3D2; --signal-green:#4ADE80; --signal-red:#E5232F;
   --azure:#4D8AFF; --azure-rgb:77,138,255;
   --hairline:rgba(240,240,240,0.08); --hairline-strong:rgba(240,240,240,0.18);
   --f-display:'Abril Fatface','Playfair Display',Georgia,serif;
@@ -67,10 +67,10 @@ a:hover{color:var(--yellow)}
 .search-bar__results-meta b{color:var(--yellow);font-weight:500}
 .search-hit{display:grid;grid-template-columns:200px 1fr auto;gap:24px;align-items:baseline;padding:14px 22px;border-bottom:1px solid var(--hairline);text-decoration:none;color:var(--fg);transition:background var(--dur-fast) var(--ease)}
 .search-hit:last-child{border-bottom:0}
-.search-hit:hover,.search-hit.is-focused{background:rgba(255,224,0,0.06)}
+.search-hit:hover,.search-hit.is-focused{background:rgba(79,195,210,0.06)}
 .search-hit__bucket{font-family:var(--f-mono);font-size:9.5px;letter-spacing:0.28em;text-transform:uppercase;color:var(--azure);white-space:nowrap}
 .search-hit__name{font-family:var(--f-head);font-weight:700;font-size:14px;letter-spacing:0.02em;text-transform:uppercase;color:var(--fg);min-width:0}
-.search-hit__name mark{background:rgba(255,224,0,0.22);color:var(--yellow);padding:0 2px}
+.search-hit__name mark{background:rgba(79,195,210,0.22);color:var(--yellow);padding:0 2px}
 .search-hit__snip{font-family:var(--f-body);font-size:12px;color:var(--fg-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:480px;justify-self:end}
 @media (max-width:800px){.search-bar__eyebrow,.search-bar__kbd{display:none}.search-hit{grid-template-columns:1fr;gap:6px}}
 
@@ -163,8 +163,8 @@ a:hover{color:var(--yellow)}
   margin-top:24px;padding:10px 14px;
   font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.22em;
   text-transform:uppercase;color:var(--yellow);
-  border:1px solid rgba(255,224,0,0.3);
-  background:rgba(255,224,0,0.04);
+  border:1px solid rgba(79,195,210,0.3);
+  background:rgba(79,195,210,0.04);
 }
 
 /* Divider */

@@ -25,9 +25,9 @@
 }
 .nav__search-btn:hover,
 .nav__search-btn:focus-visible {
-  border-color: #FFE000;
-  color: #FFE000;
-  background: rgba(255,224,0,0.06);
+  border-color: #4FC3D2;
+  color: #4FC3D2;
+  background: rgba(79,195,210,0.06);
   outline: 0;
 }
 .nav__search-btn svg { width: 16px; height: 16px; display: block; }
@@ -82,7 +82,7 @@
   color: #666;
 }
 .search-overlay__eyebrow .slash {
-  color: #FF2D6F;
+  color: #D62F3B;
   margin-right: 8px;
 }
 .search-overlay__close {
@@ -119,7 +119,7 @@
 }
 .search-overlay__glass {
   flex-shrink: 0;
-  color: #FF2D6F;
+  color: #D62F3B;
   width: 22px; height: 22px;
   display: block;
 }
@@ -163,8 +163,8 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.search-overlay__hint b { color: #FFE000; font-weight: 500; }
-.search-overlay__hint .slash { color: #FF2D6F; margin-right: 6px; }
+.search-overlay__hint b { color: #4FC3D2; font-weight: 500; }
+.search-overlay__hint .slash { color: #D62F3B; margin-right: 6px; }
 .search-overlay__hint .sep { color: #2A2A2A; }
 
 /* Results scrollable area. Card-style hits with bucket + term name. */
@@ -217,8 +217,8 @@
   min-width: 0;
 }
 .search-overlay__hit-name mark {
-  background: rgba(255,224,0,0.22);
-  color: #FFE000;
+  background: rgba(79,195,210,0.22);
+  color: #4FC3D2;
   padding: 0 2px;
 }
 .search-overlay__hit-arrow {
@@ -241,7 +241,7 @@
   text-transform: uppercase;
   color: #666;
 }
-.search-overlay__empty .slash { color: #FF2D6F; margin-right: 8px; }
+.search-overlay__empty .slash { color: #D62F3B; margin-right: 8px; }
 
 /* Initial state - when the field is empty we show a tip card row
    nudging users toward popular jumpoffs (one per bucket). */
@@ -280,7 +280,7 @@
   margin: 22px 0 0;
   padding-left: 4px;
 }
-.search-overlay__suggestions-eyebrow .slash { color: #FF2D6F; margin-right: 8px; }
+.search-overlay__suggestions-eyebrow .slash { color: #D62F3B; margin-right: 8px; }
 
 /* Disable body scroll while the overlay is open. JS toggles this. */
 body.search-open {

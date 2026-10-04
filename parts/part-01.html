@@ -28,13 +28,13 @@
   /* Foreground ladder */
   --fg:        #F3F3F3;
   --fg-2:     #C8C8C8;
-  --fg-muted: #666666;
+  --fg-muted: #B4B4B4;
   --fg-line:  #2A2A2A;
 
   /* Brand signal */
-  --yellow:    #FFE000;
-  --pink:      #FF2D6F;
-  --signal-cyan:  #00C2C7;
+  --yellow:    #4FC3D2;
+  --pink:      #D62F3B;
+  --signal-cyan:  #4FC3D2;
   --signal-violet: #A78BFA;
   --signal-green: #4ADE80;
 
@@ -71,12 +71,12 @@
 
   /* Default per-part arc accent (cyan = Fractures, free).
      Overridden by [data-arc="collapse"] on <body> for Parts XIII–XX. */
-  --arc-rgb: 0,194,199;
-  --arc-hex: #00C2C7;
+  --arc-rgb: 79,195,210;
+  --arc-hex: #4FC3D2;
 }
 body[data-arc="collapse"] {
-  --arc-rgb: 255,45,111;
-  --arc-hex: #FF2D6F;
+  --arc-rgb: 214,47,59;
+  --arc-hex: #D62F3B;
 }
 
 * { box-sizing: border-box; }
@@ -173,7 +173,7 @@ a { color: inherit; text-decoration: none; }
 }
 .nav__cta:hover {
   background: #FF4F88;
-  box-shadow: 0 0 0 1px var(--pink), 0 6px 16px -6px rgba(255,45,111,0.55);
+  box-shadow: 0 0 0 1px var(--pink), 0 6px 16px -6px rgba(214,47,59,0.55);
 }
 .nav__cta .arr-ico { width: 14px; height: 14px; flex-shrink: 0; }
 @media (max-width: 800px) { .nav__links { display: none; } }
@@ -267,7 +267,7 @@ a { color: inherit; text-decoration: none; }
   transition: background var(--dur-fast) var(--ease);
 }
 .search-hit:last-child { border-bottom: 0; }
-.search-hit:hover, .search-hit.is-focused { background: rgba(255,224,0,0.06); }
+.search-hit:hover, .search-hit.is-focused { background: rgba(79,195,210,0.06); }
 .search-hit__bucket {
   font-family: var(--f-mono); font-size: 9.5px;
   letter-spacing: 0.28em; text-transform: uppercase;
@@ -278,7 +278,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 14px; letter-spacing: 0.02em;
   text-transform: uppercase; color: var(--fg); min-width: 0;
 }
-.search-hit__name mark { background: rgba(255,224,0,0.22); color: var(--yellow); padding: 0 2px; }
+.search-hit__name mark { background: rgba(79,195,210,0.22); color: var(--yellow); padding: 0 2px; }
 .search-hit__snip {
   font-family: var(--f-body); font-size: 12px;
   color: var(--fg-muted);
@@ -631,7 +631,7 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--hairline-strong);
   color: var(--fg-muted);
 }
-.fmt--explainer { color: var(--yellow); border-color: rgba(255,224,0,0.35); }
+.fmt--explainer { color: var(--yellow); border-color: rgba(79,195,210,0.35); }
 .fmt--short     { color: var(--signal-violet); border-color: rgba(167,139,250,0.40); }
 .fmt--static    { color: var(--signal-green); border-color: rgba(74,222,128,0.40); }
 .fmt--podcast   { color: #FF7A29; border-color: rgba(255,122,41,0.42); }
@@ -802,7 +802,7 @@ a { color: inherit; text-decoration: none; }
   transition: background var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
 }
 .footer__cta:hover {
-  box-shadow: 0 0 0 1px var(--pink), 0 8px 24px -8px rgba(255,45,111,0.55);
+  box-shadow: 0 0 0 1px var(--pink), 0 8px 24px -8px rgba(214,47,59,0.55);
 }
 .footer__cta .arr-ico { width: 14px; height: 14px; }
 
@@ -846,7 +846,7 @@ a { color: inherit; text-decoration: none; }
       <span class="active" aria-current="page">Part I</span>
     </div>
     <div class="crumbs__here">
-      <span class="num">I / XX</span>FRACTURES · 1 &#x2013; 14
+      <span class="num">I / XII</span>FRACTURES · 1 &#x2013; 14
     </div>
   </div>
 </div>
@@ -879,7 +879,7 @@ a { color: inherit; text-decoration: none; }
         <span class="slash">/</span><span class="num">I</span><span>FRACTURE INDEX</span>
       </div>
       <h2 class="section__title">Fractures <span class="accent">1 &#x2013; 14</span></h2>
-      <p class="section__sub">Each Fracture is a mechanism, named precisely. Open one to see its Explainer, Short, and Static visual.</p>
+      <p class="section__sub">Each Fracture is a mechanism, named precisely. Open one to listen, watch, and find it in the book.</p>
     </header>
 
     <!--
@@ -890,102 +890,116 @@ a { color: inherit; text-decoration: none; }
     -->
     <div class="fractures-grid">
       <a class="fracture-card" href="../fractures/fracture-01-oneness.html">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 001</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>LIVE</span></div>
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 001</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">ONENESS</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
         <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 002</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-02-now.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 002</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">NOW</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 003</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-03-formlessness.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 003</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">FORMLESSNESS</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 004</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-04-the-field.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 004</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">THE FIELD</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 005</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-05-the-pulse.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 005</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">THE PULSE</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 006</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-06-the-pattern.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 006</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">THE PATTERN</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 007</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-07-form.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 007</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">FORM</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 008</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-08-impermanence.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 008</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">IMPERMANENCE</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 009</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-09-the-ache.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 009</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">THE ACHE</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 010</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-10-intelligence.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 010</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">INTELLIGENCE</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 011</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-11-life.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 011</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">LIFE</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 012</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-12-the-body.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 012</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">THE BODY</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 013</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-13-sensation.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 013</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">SENSATION</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
-      <a class="fracture-card" href="#" aria-disabled="true">
-        <div class="fracture-card__top"><span class="fracture-card__num">F · 014</span><span class="fracture-card__status"><span class="dot"></span>UPCOMING</span></div>
+      <a class="fracture-card" href="../fractures/fracture-14-the-surround.html">
+        <div class="fracture-card__top"><span class="fracture-card__num">F · 014</span><span class="fracture-card__status fracture-card__status--live"><span class="dot"></span>OPEN</span></div>
         <h3 class="fracture-card__title">THE SURROUND</h3>
         <div class="fracture-card__formats">
-          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--explainer">EXPLAINER</span><span class="fmt fmt--short">SHORT</span><span class="fmt fmt--static">STATIC</span></div>
-        <span class="fracture-card__cta">SOON <span class="arr">→</span></span>
+          <span class="fmt fmt--podcast">PODCAST</span><span class="fmt fmt--short">VERTICAL</span><span class="fmt fmt--static">BOOK</span>
+        </div>
+        <span class="fracture-card__cta">OPEN <span class="arr">→</span></span>
       </a>
     </div>
   </div>
